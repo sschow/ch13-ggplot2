@@ -1,0 +1,54 @@
+---
+title: "Participation 6"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+source("exercise.R")
+library(knitr)
+```
+
+
+1. Scatter plot of the entire diamond sample, graphed with carat on x and price 
+on the y axis. The color each of the points is based on their clarity.
+
+```{r , echo = FALSE}
+entire_diamonds_clarity
+```
+
+2. Scatter plot of the diamond sample, graphed with carat on the x axis 
+and cut on the y axis. The size of the dots are based on the price of the 
+diamond. 
+
+``` {r, echo = FALSE}
+cut_by_carat
+```
+
+3. Smooth plot of the diamond sample, graphed with carat on the x axis, and
+price on the y axis. The color is based on the cut of the diamond.
+
+``` {r, echo = FALSE, message = FALSE}
+smooth_plot
+```
+
+4. Bar plot of the diamond sample, graphed with cut on the x axis, and
+frequency on the y axis.
+
+``` {r, echo = FALSE}
+bar_cut
+```
+
+5.  Histogram of the diamond sample, graphed with price on the x axis, and
+frequency on the y axis. The color is based on the clarity of the diamond.
+
+``` {r, echo = FALSE}
+hist_prices_clarity
+```
+
+6.  Smooth and scatter plot of the diamond sample, graphed with carat on the x 
+axis, and price on the y axis. The two colors differentiate the types of plots.
+
+``` {r, echo = FALSE, message = FALSE}
+diamond_sample_data
+```
